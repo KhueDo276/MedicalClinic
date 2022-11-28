@@ -87,3 +87,38 @@ Data Reports:
 2.Patient Clinic Traffic is where you can select a clinic a doctor and the time range and it will tell you how many patients went in to see that doctor. 
 
 3. Patient-Age Group is where you select the clinic and the lower bound and upper bound and date to see how many of those patients went in during those times. 
+
+
+
+
+
+The appointment php is unused.
+the appointment patient php is unused. (OLD appointment entry forms)
+DoctorAppointmentreport is what it sounds like, It's a big table where it will show the first last name of a patient and a doctoro as well as the clinic name adress and phonenumber, as well as date,reason,time which will show all  those things where the employeeid matches the employeeid of whoever is logged in.
+DoctorPatientHistory report is similar, but it also shows referrals and prescription. When you use doctorpatienthistoryparam this is the file it leads to with the patient id you have selected.
+doctorpatienthistoryparam is a basic dropdown menu where you select all the patients that have been assigned to the doctor logged in.
+Doctorreferralreport is a big table that shows the information from the referral table in the database. There is a button to approve the referral which changes a boolean value in the database and makes the referral dissapear from the page.
+PatientReports are exactly what they sound like no surprises there. On billreport, there is a button that allows you to "pay" your bill
+The referral patient files from one to four are an ironic misnomer, they are the files for creating an appointment on the patient side. It starts with the clinic which sends that info to the referralpatient2, this uses that id from the first page to determine which doctor is able to be chose(works at that clinic).
+You take those two and send it to the third file which using the doctor's id, determines the availability of the doctor and tells the user what those days are.
+then four is used to check that date to make sure it is correct, if it is you will be able to see the  times available. then there is the last file which is just a drop down menu of preused reasons. You can also see inside the database on referralpatientfour
+adminwelcome and doctorwelcome are just basic pages
+appointmentform is to be ignored.
+assigndoctors is an admin page which has two drop down menus one for all the patients in the database and one for all the doctors.
+billingphp and billingform are to be ignored. (OLD billingforms)
+billingadmin is where you can bill patients. there is a drop down of all the patients where it has the patient name and id in case of repeated last names, as well as the clinics.
+createaccount create and are the account creation page, it has all the fields from the patient entity and it sends that to the second page where it puts in all that info and allows you to make a password it will then tell you that password.\
+create2 is to be unused and has nothing on it
+deleteappointment is unused (OLD DELETION TEST FORM)
+help.html is unused (OLD LOGIN PAGE)
+as well as employee_admin, employeeform,employeeregistration (OLD EMPLOYEE REG FORM)
+Makeappointmentphp is also unused (OLD APPOINTMENTFORM)
+password.php is the welcome page for patients
+patientform is unused (OLD PATIENT REG FORM)
+patientformdoctor is unused as well (SEE ABOVE)
+as patientdoctor patientadmin and patient.php. (SEE ABOVE ABOVE)
+prescription and prescriptionform is unused (OLD PRESCRIPTION FORMS)
+prescriptiondoctor is the page for prescription data entry modification and deletion
+referrals_doctor.php is also unused (OLD REFERRAL FORM)
+referral docttor from 1 to 4 is the ability to add in a referral from a doctor, the first page also has the ability to delete a referral
+test2.php is unused as well
